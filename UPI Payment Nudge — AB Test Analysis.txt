@@ -1,0 +1,130 @@
+# UPI Payment Nudge — A/B Test Analysis
+### Does a UPI cashback nudge at checkout increase conversion for Indian D2C brands?
+
+---
+
+## 📌 Project Overview
+A end-to-end A/B testing project simulating a real-world experiment run by an Indian D2C 
+e-commerce brand. The experiment tested whether showing a **"Pay with UPI, get 5% cashback"** 
+nudge at checkout improves purchase conversion rate.
+
+**Experiment Period:** Jan 2024 – Jun 2024  
+**Total Users:** 25,000 (12,500 per group)  
+**Tools Used:** Python · SQL (SQLite) · Tableau · Statistics
+
+---
+
+## 🎯 Business Problem
+Indian D2C brands face high checkout drop-off rates. This experiment tests whether a 
+UPI payment incentive at the final checkout step can:
+1. Increase overall purchase conversion
+2. Shift payment behaviour from COD to UPI
+3. Improve revenue per visitor — without hurting order quality
+
+---
+
+## 📊 Key Results
+
+| Metric | Control | Treatment | Change |
+|--------|---------|-----------|--------|
+| Purchase Rate | 15.00% | 18.26% | **+3.26%** |
+| Relative Lift | — | — | **+21.76%** |
+| UPI Adoption | 37.01% | 62.02% | **+25%** |
+| COD Usage | 23.15% | 7.53% | **−15.62%** |
+| Avg Order Value | ₹857 | ₹862 | No harm ✅ |
+| Revenue/Visitor | ₹129 | ₹157 | **+21.7%** |
+
+**Statistical Significance:** p < 0.0001 (Chi-square test) ✅  
+**Sample Size Adequacy:** Required 2,038/group — had 12,500/group ✅  
+**Guardrail Metric:** AOV difference not significant (p=0.5272) ✅
+
+---
+
+## 🔍 Key Insights
+
+**1. Nudge impact is funnel-stage specific**
+Add-to-cart rates were nearly identical (59.82% vs 60.38%) — the nudge had zero 
+impact at the top of the funnel. The entire lift came at the payment stage, where 
+checkout-to-purchase drop-off fell from 54.79% to 47.38%.
+
+**2. Tier 2 & 3 cities responded strongest**
+| City Tier | Control | Treatment | Lift |
+|-----------|---------|-----------|------|
+| Tier 1 | 14.87% | 17.64% | +2.77% |
+| Tier 2 | 15.07% | 18.47% | +3.40% |
+| Tier 3 | 15.08% | 18.86% | +3.78% |
+
+**3. UPI nudge dramatically reduced COD**
+COD dropped from 23% → 7.5% in the treatment group — reducing operational risk 
+and improving cash flow for the business.
+
+**4. Mobile users responded most strongly**
+Mobile conversion lift: +3.70% vs Desktop: +2.34% — consistent with UPI being 
+a mobile-native payment method.
+
+---
+
+## 🛠️ Project Structure
+
+upi-ab-test-analysis/
+│
+├── ab_testing.ipynb          # Complete analysis notebook
+│   ├── Phase 1: Data Generation
+│   ├── Phase 2: SQL Funnel Analysis
+│   └── Phase 3: Statistical Testing
+│
+├── upi_ab_test_data.csv      # Simulated dataset (25,000 users)
+│
+└── README.md                 # Project documentation
+---
+
+## 📈 Tableau Dashboard
+🔗 **[View Live Dashboard →](YOUR_TABLEAU_URL_HERE)**
+
+The dashboard includes:
+- Conversion rate comparison (Control vs Treatment)
+- Full funnel drop-off analysis
+- Payment method shift visualization
+- City tier segmentation
+
+---
+
+## 🔬 Statistical Methods Used
+- **Chi-square test** — to test if conversion difference is statistically significant
+- **Confidence intervals** — 95% CI with no overlap between groups
+- **Power analysis** — confirmed adequate sample size (required: 2,038, actual: 12,500)
+- **Guardrail metric testing** — t-test on average order value to detect adverse effects
+- **Relative & absolute lift calculation** — business impact quantification
+
+---
+
+## 💡 Business Recommendation
+> Roll out the UPI nudge to 100% of users, prioritising mobile traffic and 
+> Tier 2/3 city segments. Expected monthly revenue uplift: **₹3.6L/month** at scale.
+
+---
+
+## 🗂️ Dataset Description
+Synthetically generated dataset simulating realistic Indian e-commerce behaviour:
+
+| Column | Description |
+|--------|-------------|
+| user_id | Unique user identifier |
+| session_date | Date of visit (Jan–Jun 2024) |
+| group_name | Control or Treatment |
+| device | Mobile / Desktop / Tablet |
+| city_tier | Tier 1 / Tier 2 / Tier 3 |
+| age_group | 18-24 / 25-34 / 35-44 / 45+ |
+| returning_customer | 0 = New, 1 = Returning |
+| session_duration_mins | Time spent on site |
+| pages_visited | Number of pages viewed |
+| add_to_cart | 1 if added to cart |
+| reached_checkout | 1 if reached checkout |
+| purchased | 1 if completed purchase |
+| payment_method | UPI / Credit Card / Debit Card / COD |
+| order_value_inr | Order value in INR (0 if no purchase) |
+
+---
+
+*Built by Akanksha Singh | Aspiring Data Analyst*  
+*Tools: Python (pandas, scipy, statsmodels) · SQL · Tableau*
