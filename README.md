@@ -210,6 +210,6 @@ upi-ab-test-analysis/
 ## 🙋 About
 Built by **Akanksha Singh** — Aspiring Data Analyst  
 📍 Bengaluru, India  
-🔗 [LinkedIn](YOUR_LINKEDIN_URL) · [Tableau Public](YOUR_TABLEAU_URL)
+🔗 [LinkedIn](https://www.linkedin.com/in/akankshasingh-data/) 
 
 *Tools: Python (pandas, numpy, scipy, statsmodels) · SQL (SQLite) · Tableau Public*
