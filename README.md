@@ -56,7 +56,7 @@ This experiment tests whether a UPI payment incentive solves both problems simul
 
 ---
 
-## 📈 Dashboard
+## 📊 Dashboard
 
 ### Conversion Rate — Control vs Treatment
 ![Conversion Rate](conversion_rate.png)
@@ -69,7 +69,6 @@ This experiment tests whether a UPI payment incentive solves both problems simul
 
 ### City Tier Breakdown
 ![City Tier](city_tier.png)
-
 ---
 
 ## 🔍 Key Insights
