@@ -173,23 +173,26 @@ independence, which may not hold in practice (SUTVA violation).
 
 ---
 
-## 🗂️ Repository Structure
+## 📁 Repository Structure
+
+```bash
 upi-ab-test-analysis/
 │
-├── ab_testing.ipynb           # Complete analysis notebook
+├── ab_testing.ipynb              # Complete analysis notebook
 │   ├── Phase 1: Data Generation (Cells 1-7)
 │   ├── Phase 2: SQL Funnel Analysis (Cells 8-15)
 │   └── Phase 3: Statistical Testing (Cells 16-23)
 │
-├── upi_ab_test_data.csv       # Simulated dataset (25,000 users)
+├── upi_ab_test_data.csv          # Simulated dataset (25,000 users)
 │
-├── dashboard.png              # Dashboard preview
-├── conversion_rate.png        # Chart: Conversion rate comparison
-├── funnel_analysis.png        # Chart: Funnel drop-off
-├── payment_shift.png          # Chart: Payment method shift
-├── city_tier.png              # Chart: City tier breakdown
+├── dashboard.png                # Dashboard preview
+├── conversion_rate.png          # Chart: Conversion rate comparison
+├── funnel_analysis.png          # Chart: Funnel drop-off
+├── payment_shift.png            # Chart: Payment method shift
+├── city_tier.png                # Chart: City tier breakdown
 │
-└── README.md                  # Project documentation
+└── README.md                    # Project documentation
+```
 ---
 
 ## 🗃️ Dataset Schema
