@@ -59,16 +59,16 @@ This experiment tests whether a UPI payment incentive solves both problems simul
 ## 📊 Dashboard
 
 ### Conversion Rate — Control vs Treatment
-![Conversion Rate](conversion_rate.png)
+<img src="conversion_rate.png" width="700"/>
 
 ### Funnel Analysis
-![Funnel Analysis](funnel_analysis.png)
+<img src="funnel_analysis.png" width="700"/>
 
 ### Payment Method Shift
-![Payment Shift](payment_shift.png)
+<img src="payment_shift.png" width="700"/>
 
 ### City Tier Breakdown
-![City Tier](city_tier.png)
+<img src="city_tier.png" width="700"/>
 ---
 
 ## 🔍 Key Insights
