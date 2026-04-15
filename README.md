@@ -174,3 +174,47 @@ independence, which may not hold in practice (SUTVA violation).
 ---
 
 ## 🗂️ Repository Structure
+upi-ab-test-analysis/
+│
+├── ab_testing.ipynb           # Complete analysis notebook
+│   ├── Phase 1: Data Generation (Cells 1-7)
+│   ├── Phase 2: SQL Funnel Analysis (Cells 8-15)
+│   └── Phase 3: Statistical Testing (Cells 16-23)
+│
+├── upi_ab_test_data.csv       # Simulated dataset (25,000 users)
+│
+├── dashboard.png              # Dashboard preview
+├── conversion_rate.png        # Chart: Conversion rate comparison
+├── funnel_analysis.png        # Chart: Funnel drop-off
+├── payment_shift.png          # Chart: Payment method shift
+├── city_tier.png              # Chart: City tier breakdown
+│
+└── README.md                  # Project documentation
+---
+
+## 🗃️ Dataset Schema
+| Column | Type | Description |
+|--------|------|-------------|
+| user_id | string | Unique user identifier (USER_00001 format) |
+| session_date | date | Visit date (Jan–Jun 2024) |
+| group_name | string | Control or Treatment |
+| device | string | Mobile / Desktop / Tablet |
+| city_tier | string | Tier 1 / Tier 2 / Tier 3 |
+| age_group | string | 18-24 / 25-34 / 35-44 / 45+ |
+| returning_customer | binary | 0 = New, 1 = Returning |
+| session_duration_mins | float | Time on site in minutes |
+| pages_visited | int | Pages viewed before checkout |
+| add_to_cart | binary | 1 if added item to cart |
+| reached_checkout | binary | 1 if reached checkout page |
+| purchased | binary | 1 if completed purchase |
+| payment_method | string | UPI / Credit Card / Debit Card / COD / None |
+| order_value_inr | float | Purchase value in INR (0 if no purchase) |
+
+---
+
+## 🙋 About
+Built by **Akanksha Singh** — Aspiring Data Analyst  
+📍 Bengaluru, India  
+🔗 [LinkedIn](YOUR_LINKEDIN_URL) · [Tableau Public](YOUR_TABLEAU_URL)
+
+*Tools: Python (pandas, numpy, scipy, statsmodels) · SQL (SQLite) · Tableau Public*
