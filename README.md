@@ -1,4 +1,4 @@
-# 🧪 UPI Payment Nudge — A/B Test Analysis
+# 🧪 UPI Payment Nudge - A/B Test Analysis
 > *Does a UPI cashback nudge at checkout increase conversion for Indian D2C brands?*
 
 ![Dashboard Preview](Dashboard.png)
@@ -27,8 +27,8 @@ get 5% cashback"** nudge at checkout improves purchase conversion.
 
 ## 🎯 Business Problem
 Indian D2C brands face two major checkout problems:
-1. **High drop-off at payment step** — users reach checkout but don't complete purchase
-2. **High COD dependency** — COD has 30-40% return rates, hurting margins
+1. **High drop-off at payment step** - users reach checkout but don't complete purchase
+2. **High COD dependency** - COD has 30-40% return rates, hurting margins
 
 This experiment tests whether a UPI payment incentive solves both problems simultaneously.
 
@@ -39,7 +39,7 @@ This experiment tests whether a UPI payment incentive solves both problems simul
 | Metric | Control | Treatment | Δ Change |
 |--------|---------|-----------|----------|
 | Purchase Rate | 15.00% | 18.26% | **+3.26pp** |
-| Relative Lift | — | — | **+21.76%** |
+| Relative Lift |, |, | **+21.76%** |
 | Checkout→Purchase | 45.21% | 52.62% | **+7.41pp** |
 | UPI Adoption | 37.01% | 62.02% | **+25.01pp** |
 | COD Usage | 23.15% | 7.53% | **−15.62pp** |
@@ -50,15 +50,15 @@ This experiment tests whether a UPI payment incentive solves both problems simul
 | Test | Result |
 |------|--------|
 | Chi-square p-value | < 0.0001 ✅ |
-| 95% Confidence Interval | [14.37%–15.63%] vs [17.59%–18.94%] — no overlap ✅ |
+| 95% Confidence Interval | [14.37%–15.63%] vs [17.59%–18.94%], no overlap ✅ |
 | Power analysis | Required 2,038/group · Had 12,500/group ✅ |
-| Guardrail (AOV) | p = 0.5272 — no adverse impact ✅ |
+| Guardrail (AOV) | p = 0.5272, no adverse impact ✅ |
 
 ---
 
 ## 📊 Dashboard
 
-- 📈 **Conversion Rate — Control vs Treatment** → [Open](conversion_rate.png)  
+- 📈 **Conversion Rate, Control vs Treatment** → [Open](conversion_rate.png)  
 - 🔽 **Funnel Analysis** → [Open](funnel_analysis.png)  
 - 💳 **Payment Method Shift** → [Open](payment_shift.png)  
 - 🌆 **City Tier Breakdown** → [Open](city_tier.png)
@@ -67,11 +67,11 @@ This experiment tests whether a UPI payment incentive solves both problems simul
 ## 🔍 Key Insights
 
 ### 1. Nudge impact is funnel-stage specific
-Add-to-cart rates were nearly identical (59.82% vs 60.38%) — confirming the 
+Add-to-cart rates were nearly identical (59.82% vs 60.38%), confirming the 
 two groups were truly comparable and the experiment was fair. The entire lift 
 happened at the **final payment step**, where checkout-to-purchase drop-off 
 fell from 54.79% → 47.38%. This tells product teams exactly where to focus 
-optimisation effort — not acquisition, but payment completion.
+optimisation effort, not acquisition, but payment completion.
 
 ### 2. Tier 2 & 3 cities responded strongest
 | City Tier | Control | Treatment | Lift |
@@ -80,7 +80,7 @@ optimisation effort — not acquisition, but payment completion.
 | Tier 2 (Mid cities) | 15.07% | 18.47% | +3.40pp |
 | Tier 3 (Small towns) | 15.08% | 18.86% | **+3.78pp** |
 
-Tier 1 users are already habitual UPI users — the nudge adds less value. 
+Tier 1 users are already habitual UPI users, the nudge adds less value. 
 In Tier 2/3 cities where digital payment habits are still forming, the 
 cashback incentive provides the extra push needed. **Strategic implication:** 
 Always-on UPI nudges in Tier 2/3 markets, optional in metros.
@@ -88,7 +88,7 @@ Always-on UPI nudges in Tier 2/3 markets, optional in metros.
 ### 3. COD collapse is the hidden win
 COD dropped from 23% → 7.5% in the treatment group. Since COD carries 
 30-40% return rates in Indian e-commerce, this shift alone could save 
-significant operational costs — making the nudge's business case even 
+significant operational costs, making the nudge's business case even 
 stronger than the conversion numbers suggest.
 
 ### 4. Mobile-first effect
@@ -98,14 +98,14 @@ stronger than the conversion numbers suggest.
 | Desktop | 15.32% | 17.66% | +2.34pp |
 | Tablet | 16.57% | 17.82% | +1.25pp |
 
-UPI is natively mobile — switching to a UPI app from a mobile browser is 
+UPI is natively mobile, switching to a UPI app from a mobile browser is 
 frictionless. **Recommendation:** Prioritise mobile experience for this nudge.
 
 ---
 
 ## ⚠️ Limitations & Potential Biases
 
-*This section demonstrates analytical maturity — understanding what your 
+*This section demonstrates analytical maturity, understanding what your 
 data cannot tell you is as important as what it can.*
 
 ### 1. Synthetic data limitations
@@ -124,7 +124,7 @@ this effect typically fades after 2-3 weeks. A longer experiment duration
 
 ### 3. Selection bias in payment method analysis
 The payment method shift (COD → UPI) is observed only among purchasers. 
-We cannot observe the payment preference of non-purchasers — it's possible 
+We cannot observe the payment preference of non-purchasers, it's possible 
 that the nudge disproportionately converted UPI-preferring users, while 
 COD-preferring users remained unconverted. This would inflate the observed 
 UPI adoption shift.
@@ -135,7 +135,7 @@ general Indian e-commerce estimates. Actual brand-specific traffic distribution
 may differ significantly, affecting the generalisability of tier-wise insights.
 
 ### 5. Network effects not modelled
-Real e-commerce platforms have network effects — a user's behaviour can 
+Real e-commerce platforms have network effects, a user's behaviour can 
 influence others (social sharing, referrals). A/B testing assumes user 
 independence, which may not hold in practice (SUTVA violation).
 
@@ -143,9 +143,9 @@ independence, which may not hold in practice (SUTVA violation).
 
 ## 💡 Business Recommendation
 > Roll out the UPI nudge to **100% of users**, with priority on:
-> - 📱 **Mobile traffic** — highest sensitivity to UPI nudge (+3.70pp lift)
-> - 🏙️ **Tier 2/3 cities** — strongest relative impact (+3.78pp in Tier 3)
-> - 🔄 **COD-heavy segments** — largest operational cost reduction opportunity
+> - 📱 **Mobile traffic**, highest sensitivity to UPI nudge (+3.70pp lift)
+> - 🏙️ **Tier 2/3 cities**, strongest relative impact (+3.78pp in Tier 3)
+> - 🔄 **COD-heavy segments**, largest operational cost reduction opportunity
 >
 > **Expected monthly revenue uplift: ₹3.6L/month at current scale**  
 > **Additional benefit: Reduced COD returns saving an estimated ₹0.8-1.2L/month**
@@ -208,7 +208,7 @@ upi-ab-test-analysis/
 ---
 
 ## 🙋 About
-Built by **Akanksha Singh** — Aspiring Data Analyst  
+Built by **Akanksha Singh**, Data Analyst  
 📍 Bengaluru, India  
 🔗 [LinkedIn](https://www.linkedin.com/in/akankshasingh-data/) 
 
